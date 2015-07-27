@@ -1,9 +1,11 @@
-<h2>Songs</h2>
+<h2>Songs <a href="/songs/new">(+)</a></h2>
 
 <ul>
   <% @songs.each do |song| %>
     <li>
-      <%= link_to "#{song.title} - #{song.artist.name}",artist_song_path(song.artist,song) %>
+      <a href="/songs/<%= song.id %>">
+        <%= "#{song.title} - #{song.artist.name}" %>
+      </a>
     </li>
   <% end %>
 </ul>

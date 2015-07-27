@@ -81,9 +81,10 @@
    color: #FFFFFF;
  }
 
- a.delete {
+ input.delete, a.delete {
    background-color: red;
  }
+
 
  .artist-photo {
    width: 400px;
